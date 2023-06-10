@@ -1,0 +1,100 @@
+.header {
+  width: 80vw;
+  margin: 47px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-family: "Google sans", sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.27em;
+  @media (max-width: 480px) {
+    width: 100vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff1da;
+    row-gap: 100px;
+    margin: 0;
+    padding: 57px 0 98px 52px;
+    max-height: 530px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  &__nav {
+    width: 35%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    @media (max-width: 480px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 80%;
+      font-size: 40px;
+      gap: 30px;
+    }
+    a {
+      color: #212832;
+      text-decoration: none;
+      &:hover {
+        -webkit-animation-name: navigation;
+        animation-name: navigation;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+    }
+  }
+  &__btns {
+    width: 25%;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+.login {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+.sign-up {
+  border: 1px #212832 solid;
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 10px 22px;
+  cursor: pointer;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+.language {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  @media (max-width: 480px) {
+  }
+}

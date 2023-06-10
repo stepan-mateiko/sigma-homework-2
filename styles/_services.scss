@@ -1,0 +1,110 @@
+.services {
+  width: 85vw;
+  margin: 92px auto;
+  text-align: center;
+  position: relative;
+  @media (max-width: 480px) {
+    width: 80vw;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #5e6282;
+    margin: 0;
+  }
+  &__heading {
+    color: #14183e;
+    font-family: "Volkhov", serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin: 0;
+    text-transform: capitalize;
+    @media (max-width: 480px) {
+      font-size: 40px;
+    }
+  }
+  &__container {
+    margin-top: 108px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    @media (max-width: 480px) {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+  &__card {
+    width: 15%;
+    position: relative;
+    border-radius: 36px;
+    z-index: 1;
+    background-color: #fff;
+    padding: 10px;
+    @media (max-width: 480px) {
+      width: 67%;
+    }
+    &__title {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      color: #1e1d4c;
+    }
+    &__text {
+      color: #5e6282;
+      font-size: 500;
+      font-size: 16px;
+      width: 94%;
+      background-color: #fff;
+    }
+    &:hover {
+      -webkit-animation-name: services;
+      animation-name: services;
+      -webkit-animation-duration: 2s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+    }
+  }
+  &__back {
+    width: 8%;
+    height: 30%;
+    background-color: #df6951;
+    color: #df6951;
+    position: absolute;
+    bottom: 3vh;
+    border-radius: 30px 0px 10px;
+    z-index: -1;
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  &__pluses {
+    position: absolute;
+    top: 0;
+    right: -5vw;
+    @media (max-width: 480px) {
+      right: -10vw;
+      top: -30vh;
+    }
+  }
+}
+.back-1 {
+  left: 5vw;
+}
+.back-2 {
+  left: 26vw;
+}
+.back-3 {
+  left: 48vw;
+}
+.back-4 {
+  left: 69vw;
+}

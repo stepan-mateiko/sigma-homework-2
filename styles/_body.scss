@@ -1,0 +1,16 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  background-image: url(./assets/images/decore.svg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  @media (max-width: 480px) {
+    background-image: none;
+  }
+}
